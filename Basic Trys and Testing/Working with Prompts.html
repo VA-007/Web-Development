@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prompts & Inputs</title>
+</head>
+<body onload="alert('The page is loaded!');">
+  <h1>Welcome</h1>
+  <br>
+
+  <script>
+    function hello_prompt()
+    {
+      var person_name =  prompt("Please enter your name: ","Your name here");
+      if(person_name == "")
+      {
+        alert("Please enter your name!");
+      }
+      else if(person_name == "Your name here")
+      {
+        alert("Please enter a valid name!");
+      }
+      else
+      {
+        document.getElementById("test").innerHTML = "Hi " + person_name + "! How are you on this fine day?";
+      }
+    }
+  </script>
+
+  <button onclick="hello_prompt()">Click Here!</button>
+  <p id="test" style="font-size: 130%;"></p>
+
+  <a href="/Using Javascript.html" target="_blank">Javascript</a> &nbsp;
+  <a href="/Making Our Routine.html" target="_blank">2</a>
+
+</body>
+</html>

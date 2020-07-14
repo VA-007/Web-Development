@@ -1,0 +1,249 @@
+body
+{
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+
+header
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+#headerLogo
+{
+  height: 50px;
+  width: 50px;
+  padding-right: 10px;
+}
+#IAF_Heading
+{
+  font-size: 170%;
+  color: #ffffff;
+}
+#safronn
+{
+  color: orange;
+  font-size: 170%;
+}
+#white
+{
+  color: #ffffff;
+  font-size: 170%;
+}
+#green
+{
+  color: green;
+  font-size: 167%;
+}
+
+
+
+
+.navbar
+{
+  background-color: #000000;
+  overflow: hidden;
+  margin-top: 0px;
+  padding: 7px 0px 10px 0px;
+}
+.navbar ul
+{
+  overflow: auto;
+  padding: 10px 0px 10px 80px;
+  margin-bottom: 0px;
+  margin-top: 0px
+}
+.navbar li
+{
+  color: #ffffff;
+  list-style: none;
+  font-size: 130%;
+  float: left;
+  padding: 10px 20px 10px 20px;
+}  
+.navbar li a
+{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+
+#mainImage
+{
+  background-image: url(https://hdwallpaperim.com/wp-content/uploads/2017/08/23/458622-Indian_Air_Force-LCA_Tejas.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
+  background-position-y: -100px;
+  height : 1000px;
+  width: 100%
+}
+#layer
+{
+  background-color: rgba(0, 0, 0, 0.342);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#inImage
+{
+  padding: 300px 0px 50px 0px;
+}
+#inImageLogo
+{
+  text-align: center;
+  margin: 0px;
+}
+#Image
+{
+  height: 200px;
+  width: 180px;
+}
+.inImageText
+{
+  text-align: center;
+  color: #ffffff;
+  font-size: 350%;
+  margin: 25px;
+}
+
+
+#wrapper
+{
+  padding: 50px 0px;
+  width: 66%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#box1
+{
+  display: inline-block;
+  padding: 20px 30px 20px 30px;
+  width: 260px;
+  margin-top: 0px;
+}
+#box2
+{
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 20px 30px 20px 30px;
+  width: 260px;
+}
+#box3
+{
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 20px 30px 20px 30px;
+  width: 260px;
+}
+#box4
+{
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 20px 30px 20px 30px;
+  width: 260px;
+}
+.boxImg
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 70px;
+  width: 70px;
+}
+.head
+{
+  text-align: center;
+  font-size: 120%;
+}
+.text
+{
+  font-size: 90%;
+  font-family: 'Open Sans', sans-serif;
+  text-align: justify
+}
+
+
+hr
+{
+  line-height: 350px;
+  width: 100%;
+}
+
+.inputForm
+{
+  clear: both;
+  float: left;
+  margin: 0px 0px 0px 0px;
+  padding: 50px 0px 64px 20%;
+  font-size: 120%;
+}
+.inputForm input
+{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 80%;
+  border-style: none;
+  padding: 8px 18px 8px 18px;
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 3px;
+  margin: 10px 6px 10px 5px;
+}
+.inputForm select
+{
+  padding: 5px 30px 5px 5px;
+  margin: 15px 5px 10px 5px;
+}
+.highlight
+{
+  padding: 0px 0px 64px 0px;
+  margin: 0px 0px 0px 0px ;
+}
+#why
+{
+  margin-top: 40px;
+}
+.inputForm textarea
+{
+  font-size: 120%;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+
+
+footer
+{
+  clear: both;
+  margin: 0px 0px 0px 0px;
+  padding: 10px 10px 10px 10px;
+  background-color: black;
+  color: #ffffff;
+}
+.footerImg
+{
+  width: 28px;
+  height: 25px;
+  padding: 0px 10px;
+}
+#foot
+{
+  font-size: 180%;
+  text-align: center;
+  padding: 5px 10px 10px 10px;
+  margin: 0px;
+}
+.footerText
+{
+  font-size: 100%;
+  text-align: center;
+  margin: 0px;
+  padding: 5px 5px 5px 5px;
+}

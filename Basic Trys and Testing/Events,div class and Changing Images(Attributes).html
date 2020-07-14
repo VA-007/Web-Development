@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Playing with Shapes</title>
+  <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/480px-Unofficial_JavaScript_logo_2.svg.png" type="image/x-icon">
+</head>
+
+<body style="background-color: rgb(176, 211, 191);" onload="alert('आपसे मिलकर अच्छा लगा!😄')">
+  <h1 style="font-size: 300%; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-align: center; color: rgb(19, 87, 13);"><u>Let's Play with some Shapes!</u></h1>
+
+
+  <!-- Javascript code starting -->
+  <script>
+
+    function check1()
+    {
+      var input = document.getElementById("input_1").value;
+
+      if(input.length < 3)
+      {
+        document.getElementById("message_1").innerHTML = "Too Short!";
+      }
+      else
+      {
+        document.getElementById("message_1").innerHTML = "Great Choice!";
+      }
+    }
+
+    function check2()
+    {
+      var input2 = document.getElementById("input_2").value;
+
+      if(input2.length == "")
+      {
+        document.getElementById("message_2").innerHTML= "Why so Rude?!";
+      }
+      else if(input2 == "Hi" || input2 == "hi")
+      {
+        document.getElementById("message_2").innerHTML = "Hello There!";
+      }
+      else
+      {
+        document.getElementById("message_2").innerHTML = "It Seems you entered something else"
+      }
+    }
+
+    function check3()
+    {
+      var input3 = document.getElementById("input_3").value;
+
+      if(input3.length == 0)
+      {
+        document.getElementById("message_3").innerHTML = "This is a Mandatory field!";
+      }
+      else
+      {
+        document.getElementById("message_3").innerHTML = "Hi " + input3 + ", Nice to meet you!";
+      }
+    }
+  </script>
+
+  <br>
+
+
+
+  <!-- Web Page body Starting and using div tags -->
+  <div class="block" style="text-align:center; font-size: 120%;">
+    <label>Say a Hi!</label> &nbsp;
+    <input type="text" id="input_2" onblur="check2()"><span id="message_2"></span>
+  </div>
+  <br>
+  <div class="block" style="text-align: center; font-size: 120%;">
+    <label>Enter your name<span style="color: crimson;">*</span></label> &nbsp; 
+    <input type="text" id="input_3" onblur="check3()"><span id="message_3"></span>
+  </div>
+  <br>
+  <div class="block" style="text-align: center; font-size: 120%;">
+    <label>Enter your favourite shape</label> &nbsp;
+    <input type="text" id="input_1" onblur="check1()"><span id="message_1"></span>
+  </div>
+  <br>
+  <br>
+
+
+  <!-- Changing Shapes -->
+  <p style="text-align: center;">
+    <button onclick="document.getElementById('circle').src='https://cdn2.iconfinder.com/data/icons/user-interface-vol-1-14/48/check-box-empty-square-unchecked-512.png'">Click here to Make it a Square!</button>
+
+    <button onclick="document.getElementById('circle').src='https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Regular_hexagon.svg/1024px-Regular_hexagon.svg.png'">Click here to Make it a Hexagon!</button>
+
+    <img id="circle" src="https://cdn2.iconfinder.com/data/icons/user-interface-vol-1-14/48/check-box-empty-square-unchecked-512.png" height="200" width="200">
+
+    <button onclick="document.getElementById('circle').src='https://webstockreview.net/images/cube-clipart-cylinder-shape-13.png'">Click here to Make it a Cylinder!</button>
+
+    <button onclick="document.getElementById('circle').src='https://pluspng.com/img-png/circle-png-circle-png-hd-1600.png'">Click here to Make it a Circle!</button>
+  </p>
+
+  <br> <br>
+  <hr>
+  <br>
+
+  <!-- Display Date and Time -->
+  <p style="text-align: center;">
+    <button onclick="document.getElementById('display_date').innerHTML = Date();">Click here to display current date and time!</button>
+  </p>
+  <p id='display_date' style="text-align: center; font-size: 130%;"></p>
+
+  <br>
+  <hr>
+  <br><br>
+  
+  <!-- Google logo -->
+  <p style="text-align: center;">
+    <a href="https://www.google.com"><img src="https://pluspng.com/img-png/google-logo-png-open-2000.png" alt="Google" height="50" width="50"></a>
+  </p>
+  <p style="text-align: center; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 100%; color: navy;">Go to Google</p>
+  
+</body>
+</html>

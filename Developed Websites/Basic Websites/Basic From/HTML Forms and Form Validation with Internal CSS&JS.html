@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Application Form</title>
+  <link rel="shortcut icon" href="https://static.thenounproject.com/png/25603-200.png" type="image/x-icon">
+
+  <style>
+    body {
+      margin: 0px;
+      padding: 0px;
+      background-color: #0E0B16;
+      font-family: 'Lato', sans-serif;
+      color: #E7DFDD;
+      ;
+    }
+
+
+    .navbar {
+      background-color: #0E0B16;
+      margin-top: 0px;
+      border-bottom: 1px solid #E7DFDD;
+    }
+
+    .navbar ul {
+      overflow: auto;
+      padding-top: 7px;
+      padding-bottom: 4px;
+      margin-bottom: 10px;
+      margin-top: 15px;
+    }
+
+    .navbar li {
+      color: #E7DFDD;
+      list-style: none;
+      font-size: 170%;
+      float: left;
+      font-family: 'Ubuntu', sans-serif;
+    }
+
+    .navbar li a {
+      padding: 0px 36px;
+      text-decoration: none;
+      color: #E7DFDD;
+    }
+
+    .navbar input {
+      border: 2px solid #E7DFDD;
+      background-color: #E7DFDD;
+      border-radius: 3px;
+      padding: 6px 30px 6px 8px;
+    }
+
+    .navbar button {
+      border-style: none;
+      color: #E7DFDD;
+      background-color: #a239ca;
+      padding: 8px 18px 8px 18px;
+      margin-left: 4px;
+      cursor: pointer;
+      border-radius: 3px;
+      transition-duration: 0.4s;
+    }
+
+    .navbar button:hover {
+      background-color: #5d0081;
+    }
+
+    .search {
+      float: right;
+      padding: 3px 32px 7px 0px;
+    }
+
+    #hed {
+      font-size: 250%;
+    }
+
+    .inputForm {
+      margin: 0px 10px 10px 60px;
+      padding: 50px 0px 0px 100px;
+      font-size: 120%;
+    }
+
+    .inputForm table tr td input {
+      border-style: none;
+      padding: 8px 18px 8px 18px;
+      cursor: pointer;
+      border-radius: 3px;
+      margin: 10px 4px 12px 18px;
+    }
+
+    .inputForm table tr td select {
+      padding: 5px;
+      margin-left: 18px;
+    }
+
+    .highlight {
+      padding-top: 0px;
+      padding-bottom: 75px;
+    }
+  </style>
+
+  <script>
+    function check_name() {
+      var input_name = document.getElementById('name').value;
+
+      if (input_name.length == 0) {
+        document.getElementById('name_alert').innerHTML = "Mandatory Field!";
+        document.getElementById('name_alert').style.color = "#f20000";
+      }
+      else if (input_name.length < 3) {
+        document.getElementById('name_alert').style.color = "#a239ca";
+        document.getElementById('name_alert').innerHTML = "Too short!";
+      } else {
+        document.getElementById('name_alert').innerHTML = "Your Name has been accepted";
+        document.getElementById('name_alert').style.color = "#30d13b";
+      }
+    } function myFunction() {
+      var x = document.getElementById("password"); if (x.type === "password") { x.type = "text"; }
+      else { x.type = "password"; }
+    }
+  </script>
+
+  <!-- Fonts used -->
+
+  <!-- NavBar,footer--------  font-family: 'Ubuntu', sans-serif; -->
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+
+  <!-- Rest Body-----  font-family: 'Lato', sans-serif; -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li> <a href="#">Home</a> </li>
+        <li> <a href="#">About</a> </li>
+        <li> <a href="#">Contact us</a> </li>
+        <li> <a href="#">Our Achievements</a> </li>
+        <li> <a href="#">Legal</a> </li>
+        <div class="search">
+          <input type="text" name="search" id="searchBox" placeholder="Search">
+          <button id="searchGoButton"><b>Go!</b></button>
+        </div>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="inputForm">
+    <h1 id="hed">Eligibility Form</h1>
+
+    <form action="#">
+      <table>
+
+        <tr>
+          <td><label for="name">Name:</label></td>
+          <td><input type="text" name="myName" id="name" onblur="check_name()"></td>
+          <td><span id="name_alert"></span></td>
+        </tr>
+
+        <tr>
+          <td><label for="myGender">Gender:</label></td>
+          <td><input type="radio" name="myGender" id="myGender">Male <input type="radio" name="myGender"
+              id="myGender">Female <input type="radio" name="myGender" id="myGender">Other</td>
+        </tr>
+
+        <tr>
+          <td><label for="dob">Date of Birth:</label></td>
+          <td><input type="date" name="dob" id="dob"></td>
+        </tr>
+
+        <tr>
+          <td><label for="email">E-mail:</label></td>
+          <td><input type="email" name="myEmail" id="email" placeholder="xyz@email.com"></td>
+        </tr>
+
+        <tr>
+          <td><label for="password">Password:</label></td>
+          <td><input type="password" name="password" id="password" placeholder="**************"></td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td><input type="checkbox" onclick="myFunction()">Show Password</td>
+        </tr>
+
+        <tr>
+          <td class="highlight"><label for="role">Role &nbsp; (Select all which apply) &nbsp; :</label></td>
+          <td>
+            <input type="checkbox" name="role" id="developer">Developer <input type="checkbox" name="role"
+              id="musician">Musician <br> <input type="checkbox" name="role" id="painter">Painter <input type="checkbox"
+              name="role" id="gamer">Gamer <br> <input type="checkbox" name="role" id="writer">Writer  <input type="checkbox" name="role" id="sports">Sports
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="semester">Current Sem:</label></td>
+          <td><select name="semester" id="sem">
+              <option value="---">---</option>
+              <option value="1">1st Sem</option>
+              <option value="2">2nd Sem</option>
+              <option value="3">3rd Sem</option>
+              <option value="4">4th Sem</option>
+              <option value="5">5th Sem</option>
+              <option value="6">6th Sem</option>
+              <option value="7">7th Sem</option>
+              <option value="8">8th Sem</option>
+            </select></td>
+        </tr>
+
+        <tr>
+          <td><label for="points">Points Earned (From 1 to 10):</label></td>
+          <td><input type="number" name="points" id="points" min="1" max="10"></td>
+        </tr>
+      </table>
+
+      <input type="submit" value="Submit Now"
+        style="border-style: none; color: #E7DFDD; background-color: #a239ca; padding: 12px 28px 12px 28px; margin: 22px 3px 5px 9px; cursor: pointer; border-radius: 3px; transition-duration: 0.4s;">
+
+      <input type="reset" value="Reset"
+        style="border-style: none; color: #E7DFDD; background-color: #a239ca; padding: 12px 50px 12px 50px; margin: 5px 15px 5px 30px;cursor: pointer; border-radius: 3px; transition-duration: 0.4s; ">
+
+
+    </form>
+  </div>
+
+</body>
+
+</html>

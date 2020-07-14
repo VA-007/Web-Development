@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creating Forms</title>
+  <link rel="shortcut icon" href="https://static.thenounproject.com/png/25603-200.png" type="image/x-icon">
+  <script src="JavaScript File.js"></script>
+  <style>
+    .Button
+    {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      text-align: center;
+      font-size: 130%;
+      background-color: rgb(80, 255, 109);
+      cursor: pointer;
+      transition-duration: 0.4s;
+    }
+    .Button:hover
+    {
+      background-color: rgb(224, 255, 194);
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Creating Forms</h1>
+  <br>
+
+  <!-- Creating a HTML Form -->
+  <form action="backend.php">   <!--This Tells that the form data is to be submited to backend.php--> 
+    <div>
+      <label for="name">Name:</label> <input type="text" name="myName" id="name" onblur="check_name()"> <span id="name_alert"></span>
+    </div>
+    <br>
+    <div>
+      <label for="number">Reg No. :</label> <input type="number" id="number" name="myNmber">
+    </div>
+    <br>
+    <div>
+      <label for="year">Year:</label> <input type="radio" name="mySem" id="year">1st <input type="radio" name="mySem">2nd <input type="radio" name="mySem" id="year">3rd <input type="radio" name="mySem" id="year">4th
+    </div>
+    <br>
+    <div>
+      <label for="DOB">Date of Birth:</label> <input type="date" name="myDOB" id="DOB">
+    </div>
+    <br>
+    <div>
+      <label for="gender">Gender:</label> <input type="radio" name="myGender" id="gender">Male <input type="radio" name="myGender" id="gender">Female <input type="radio" name="myGender" id="gender">Others
+    </div>
+    <br>
+    <div>
+      <label for="eligibility">Are you 18 or older?</label> <input type="checkbox" name="myEligibility" id="eligibility">
+    </div>
+    <br>
+    <div>
+      <input class="Button" type="submit" value="Submit Now">
+      <input class="Button" type="reset" value="Reset Now">
+    </div>
+  </form>
+
+  <br><br>
+
+  <!-- HTML Entities -->
+  <div>
+    <p>This is a normal paragraph</p>
+    <p>This is a paragraph with copyright sign &copy;</p>
+    <p>This is a paragraph with &nbsp; 2 spaces</p>
+    <p>This is a paragraph with the paragraph tag &lt;p&gt;</p>
+    <p>This is a paragraph with pound symbol &pound;</p>
+    <p>This is a paragraph with empty space - &#8203;</p>
+  </div>
+
+</body>
+</html>

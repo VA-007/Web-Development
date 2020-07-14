@@ -1,0 +1,29 @@
+#08DBB6 - Sea Green
+
+#3E4349 - Grey
+
+#141939 - Text
+
+
+Fonts-
+
+Headings - font-family: 'Roboto Condensed', sans-serif;
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+Paragraphs - font-family: 'Open Sans', sans-serif;
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+
+
+भारतीय वायु सेना
+
+IAF logo - https://afcat.cdac.in/AFCAT/assets/images/logo/rsz_1iaf-logo.png
+Main logo - https://afcat.cdac.in/AFCAT/assets/images/logo/2.png
+
+
+icons - 
+
+people- https://image.flaticon.com/icons/svg/25/25437.svg
+pen- https://cdn3.iconfinder.com/data/icons/line-graphics/32/pencil-512.png
+react - https://cdn.iconscout.com/icon/free/png-256/react-native-1-555609.png
+career - https://static.thenounproject.com/png/1326988-200.png

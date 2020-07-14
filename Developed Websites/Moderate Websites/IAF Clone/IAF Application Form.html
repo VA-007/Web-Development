@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Indian Air Force</title>
+  <link rel="shortcut icon" href="https://afcat.cdac.in/AFCAT/assets/images/logo/rsz_1iaf-logo.png" type="image/x-icon">
+
+  <style>
+    body {
+      margin: 0px;
+      padding: 0px;
+      font-family: 'Roboto Condensed', sans-serif;
+    }
+
+    /* ====================================================================================================== */
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: black;
+    }
+
+    #headerLogo {
+      height: 50px;
+      width: 50px;
+      padding-right: 10px;
+    }
+
+    #IAF_Heading {
+      font-size: 170%;
+      color: #ffffff;
+    }
+
+    #safronn {
+      color: orange;
+      font-size: 170%;
+    }
+
+    #white {
+      color: #ffffff;
+      font-size: 170%;
+    }
+
+    #green {
+      color: green;
+      font-size: 170%;
+    }
+
+
+    /* ====================================================================================================== */
+
+
+    .navbar {
+      background-color: #000000;
+      overflow: hidden;
+      margin-top: 0px;
+      padding: 7px 0px 10px 0px;
+    }
+
+    .navbar ul {
+      overflow: auto;
+      padding: 10px 0px 10px 60px;
+      margin-bottom: 0px;
+      margin-top: 0px
+    }
+
+    .navbar li {
+      color: #ffffff;
+      list-style: none;
+      font-size: 130%;
+      float: left;
+      padding: 10px 20px 10px 20px;
+    }
+
+    .navbar li a {
+      text-decoration: none;
+      color: #ffffff;
+    }
+
+
+    /* ====================================================================================================== */
+
+
+    #mainImage {
+      background-image: url(https://hdwallpaperim.com/wp-content/uploads/2017/08/23/458622-Indian_Air_Force-LCA_Tejas.jpg);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      position: relative;
+      background-position-y: -100px;
+      height: 1000px;
+      width: 100%;
+    }
+    #layer {
+      background-color: rgba(0, 0, 0, 0.342);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%
+    }
+    #inImage {
+      padding: 300px 0px 50px 0px;
+    }
+    #inImageLogo {
+      text-align: center;
+      margin: 0px;
+    }
+    #Image {
+      height: 200px;
+      width: 180px;
+    }
+    .inImageText {
+      text-align: center;
+      color: #ffffff;
+      font-size: 350%;
+      margin: 25px;
+    }
+
+
+    /* ====================================================================================================== */
+
+
+    #box1 {
+      float: left;
+      padding: 60px 40px 20px 40px;
+      margin: 0px 0px 30px 137px;
+      width: 230px;
+    }
+
+    #box2 {
+      float: left;
+      padding: 60px 20px 20px 20px;
+      margin-bottom: 30px;
+      width: 230px;
+    }
+
+    #box3 {
+      float: left;
+      padding: 60px 20px 20px 20px;
+      margin-bottom: 30px;
+      width: 230px;
+    }
+
+    #box4 {
+      float: left;
+      padding: 60px 20px 20px 20px;
+      margin-bottom: 30px;
+      width: 230px;
+    }
+
+    .boxImg {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      height: 70px;
+      width: 70px;
+    }
+
+    .head {
+      text-align: center;
+      font-size: 120%;
+    }
+
+    .text {
+      font-size: 90%;
+      font-family: 'Open Sans', sans-serif;
+      text-align: justify
+    }
+
+
+    hr {
+      line-height: 350px;
+      width: 100%;
+    }
+
+
+    /* ====================================================================================================== */
+
+
+    .inputForm {
+      clear: both;
+      float: left;
+      margin: 0px 0px 0px 0px;
+      padding: 50px 0px 64px 260px;
+      font-size: 120%;
+    }
+
+    .inputForm input {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 80%;
+      border-style: none;
+      padding: 8px 18px 8px 18px;
+      cursor: pointer;
+      border: 1px solid black;
+      border-radius: 3px;
+      margin: 10px 6px 10px 5px;
+    }
+
+    .inputForm select {
+      padding: 5px 30px 5px 5px;
+      margin: 15px 5px 10px 5px;
+    }
+
+    .highlight {
+      padding: 0px 0px 64px 0px;
+      margin: 0px 0px 0px 0px;
+    }
+
+    #why {
+      margin-top: 40px;
+    }
+
+    .inputForm textarea {
+      font-size: 120%;
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
+
+
+    /* ====================================================================================================== */
+
+
+    footer {
+      clear: both;
+      margin: 0px 0px 0px 0px;
+      padding: 10px 10px 10px 10px;
+      background-color: black;
+      color: #ffffff;
+    }
+
+    .footerImg {
+      width: 28px;
+      height: 25px;
+      padding: 0px 10px;
+    }
+
+    #foot {
+      font-size: 180%;
+      text-align: center;
+      padding: 5px 10px 10px 10px;
+      margin: 0px;
+    }
+
+    .footerText {
+      font-size: 100%;
+      text-align: center;
+      margin: 0px;
+      padding: 5px 5px 5px 5px;
+    }
+  </style>
+
+
+  <script>
+    function check_name() {
+      var input_name = document.getElementById('name').value;
+
+      if (input_name.length == 0) {
+        document.getElementById('name_alert').innerHTML = "Mandatory Field!";
+        document.getElementById('name_alert').style.color = "#f20000";
+      }
+      else if (input_name.length < 3) {
+        document.getElementById('name_alert').style.color = "#f20000";
+        document.getElementById('name_alert').innerHTML = "Name too short";
+      }
+      else {
+        document.getElementById('name_alert').innerHTML = "Your Name has been accepted";
+        document.getElementById('name_alert').style.color = "#30d13b";
+      }
+    }
+
+
+    function check_text() {
+      var input_name = document.getElementById('whyR').value;
+
+      if (input_name.length == 0) {
+        document.getElementById('text_alert').innerHTML = "Mandatory Field!";
+        document.getElementById('text_alert').style.color = "#f20000";
+      }
+      else if (input_name.length < 10) {
+        document.getElementById('text_alert').style.color = "#f20000";
+        document.getElementById('text_alert').innerHTML = "Too short! Atleast 10 words";
+      }
+      else {
+        document.getElementById('text_alert').innerHTML = "Your response has been recorded!";
+        document.getElementById('text_alert').style.color = "#30d13b";
+      }
+    }
+
+
+    // -------------Show Password Function------------
+    function myFunction() {
+      var x = document.getElementById("password");
+      if (x.type === "password") {
+        x.type = "text";
+      }
+      else {
+        x.type = "password";
+      }
+    }
+
+
+    // -----------Slider Value Function-------
+    function show_value(x) {
+      document.getElementById("slider_value").innerHTML = x;
+    }
+  </script>
+
+
+
+  <!-- Fonts Used -->
+  <!-- Headings -   font-family: 'Roboto Condensed', sans-serif; -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+  <!-- Hindi Heading -  font-family: 'Hind', sans-serif; -->
+  <link href="https://fonts.googleapis.com/css2?family=Hind&display=swap" rel="stylesheet">
+
+  <!-- Paragraphs - font-family: 'Open Sans', sans-serif; -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-------------------- NavBar ------------------->
+  <header>
+    <div>
+      <img id="headerLogo"
+        src="https://src1.ilogo.in/new_upload/2015/1509/1441173157492481802147768/1442305908/thumbnail_220x220.jpg?size=13820.jpg"
+        alt="">
+    </div>
+    <div>
+      <span id="IAF_Heading">INDIAN AIR FORCE</span>
+      <span id="safronn" class="slashes"><b>/</b></span>
+      <span id="white" class="slashes"><b>/</b></span>
+      <span id="green" class="slashes"><b>/</b></span>
+      &nbsp;
+      <span id="IAF_Heading">भारतीय वायु सेना</span></div>
+    <nav class="navbar">
+      <ul>
+        <li> <a href="#">HOME</a> </li>
+        <li> <a href="#">ABOUT</a> </li>
+        <li> <a href="#">CAREER</a> </li>
+        <li> <a href="#">ACHIEVEMENTS</a> </li>
+        <li> <a href="#">LIFE IN IAF</a> </li>
+        <li> <a href="#">CONTACT US</a> </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!------------------- Main Image and Logo ---------------------->
+  <div id="mainImage">
+    <div id="layer">
+      <div id="inImage">
+        <p id="inImageLogo"><img id="Image"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Badge_of_the_Indian_Air_Force.svg/1200px-Badge_of_the_Indian_Air_Force.svg.png"
+            alt="IAF_Logo"></p>
+        <p class="inImageText">INDIAN AIR FORCE</p>
+        <P class="inImageText">भारतीय वायु सेना</P>
+      </div>
+    </div>
+  </div>
+
+  <!------------------ Flexbox --------------->
+  <div id="wrapper">
+    <div id="box1">
+      <img class="boxImg" src="https://image.flaticon.com/icons/svg/25/25437.svg" alt="">
+      <p class="head">LIFE IN IAF</p>
+      <p class="text">As an Officer, a warrior, in the Air Force, you’re tasked with upholding the constitution and
+        protecting India’s freedom. The responsibility is enormous, but its not only about work its also about living
+        well.</P>
+    </div>
+    <div id="box2">
+      <img class="boxImg" src="https://cdn3.iconfinder.com/data/icons/line-graphics/32/pencil-512.png" alt="">
+      <p class="head">SELECTION</p>
+      <P class="text">Explore selection process to be an Indian Air Force Officer. Selection depends on how you perform
+        in written tests, interviews, medical fitness test and All India merit list.</P>
+    </div>
+    <div id="box3">
+      <img class="boxImg" src="https://cdn.iconscout.com/icon/free/png-256/react-native-1-555609.png" alt="">
+      <p class="head">MOTTO OF IAF</p>
+      <P class="text">The Motto of Indian Air Force (Touch the sky with Glory) has been taken from eleventh chapter of
+        the Gita, the Discourse given by Lord Krishna to Arjuna on the battlefield of Kurukshetra during the Great War
+        of Mahabharata.</P>
+    </div>
+    <div id="box4">
+      <img class="boxImg" src="https://static.thenounproject.com/png/1326988-200.png" alt="">
+      <p class="head">CAREER</p>
+      <P class="text">An officer is a member of an armed force or uniformed service who holds a position of authority.
+        To be able to lead and control, requires the ability to motivate yourself, inspire others and make tough
+        decisions efficiently.</P>
+    </div>
+  </div>
+
+  <hr>
+
+  <!----------------- Elegibility Form ---------------->
+  <div class="inputForm">
+    <h1>Application Form</h1>
+
+    <form action="#">
+
+      <table>
+
+        <tr>
+          <td><label for="name">Name:</label></td>
+          <td><input type="text" name="myName" id="name" onblur="check_name()"></td>
+          <td><span id="name_alert"></span></td>
+        </tr>
+
+        <tr>
+          <td><label for="myGender">Gender:</label></td>
+          <td><input type="radio" name="myGender" id="myGender">Male <input type="radio" name="myGender"
+              id="myGender">Female <input type="radio" name="myGender" id="myGender">Other</td>
+        </tr>
+
+        <tr>
+          <td><label for="dob">Date of Birth:</label></td>
+          <td><input type="date" name="dob" id="dob"></td>
+        </tr>
+
+        <tr>
+          <td><label for="email">E-mail:</label></td>
+          <td><input type="email" name="myEmail" id="email" placeholder="xyz@email.com"></td>
+        </tr>
+
+        <tr>
+          <td><label for="password">Password:</label></td>
+          <td><input type="password" name="password" id="password" placeholder="**************"></td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td><input type="checkbox" onclick="myFunction()">Show Password</td>
+        </tr>
+
+        <tr>
+          <td><label for="branch">Branch wish to opt in:</label></td>
+          <td><select name="branch" id="sem">
+              <option value="----">-----------</option>
+              <option value="1">Flying</option>
+              <option value="2">Technical</option>
+              <option value="3">Ground Duty</option>
+              <option value="4">Controller</option>
+              <option value="5">Accounts</option>
+              <option value="6">Sports</option>
+              <option value="7">Others</option>
+            </select></td>
+        </tr>
+
+        <tr>
+          <td><label for="gpa">GPA in Graduation (From 1 to 10):</label></td>
+          <td><input type="number" name="points" id="points" min="1" max="10"></td>
+        </tr>
+
+        <tr>
+          <td><label for="satisfactionRange">How Organised is your Lifestyle on a scale of 1 to 10:</label></td>
+          <td><input type="range" name="satisfactionRange" id="satisfactionRange" value="5" step="1" min="1" max="10"
+              onchange=show_value(this.value);>
+          <td><span id="slider_value" style="color:rgb(0, 0, 0);"></span></td>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="highlight"><label for="intrests">Select all in which you are intrested in:</label></td>
+          <td><input type="checkbox" name="role" id="Sports">Sports <input type="checkbox" name="role" id="music">Music
+            <br> <input type="checkbox" name="role" id="painting">Painting <input type="checkbox" name="role"
+              id="gaming">Gaming <br> <input type="checkbox" name="role" id="Book Reading">Book Reading <input
+              type="checkbox" name="role" id="Adventure">Adventure</td>
+        </tr>
+
+        <tr>
+          <td id="why"><label for="whyR">Why do you want to join the IAF?</label></td>
+          <td><textarea name="whyR" id="whyR" cols="30" rows="8" onblur="check_text()"
+              placeholder="Be genuine in your response!"></textarea></td>
+          <td><span id="text_alert"></span></td>
+        </tr>
+
+        <tr>
+          <td>
+            <button onclick="return false"
+              style="border-style: none; color: #ffffff; background-color: #000000; padding: 15px 52px 15px 51px; margin: 22px 3px 5px 0px; cursor: pointer; border-radius: 3px;">Join
+              Now!</button>
+
+
+            <input type="reset" value="Reset"
+              style="border-style: none; color: #ffffff; background-color: #000000; padding: 12px 50px 12px 50px; margin: 5px 15px 5px 30px;cursor: pointer; border-radius: 3px; transition-duration: 0.4s; ">
+          </td>
+        </tr>
+      </table>
+
+    </form>
+  </div>
+
+  <footer>
+    <div>
+      <p style="text-align: center;">
+        <a href="#"><img class="footerImg"
+            src="https://www.pinclipart.com/picdir/big/178-1785162_white-home-icon-png-vector-royalty-free-download.png"
+            alt=""></a>
+        <a href="#"><img class="footerImg"
+            src="https://purepng.com/public/uploads/large/purepng.com-white-paper-planpaper-planeaeroplanepaper-gliderpaper-dartaircraftfolded-paperpaperboardclipartblack-1421526588368xfqlq.png"
+            alt=""></a>
+        <a href="https://www.instagram.com/indianairforce/"><img class="footerImg"
+            src="https://www.seekpng.com/png/full/138-1383474_insta-icon-white-instagram-logo-white-black-background.png"
+            alt=""></a>
+        <a href="https://www.facebook.com/IndianAirForce/"><img class="footerImg"
+            src="https://www.nicepng.com/png/full/152-1527724_facebook-live-streaming-logo-black-and-white-fb.png"
+            alt=""></a>
+      </p>
+
+    </div>
+    <div>
+      <P id="foot">JOIN THE INDIAN AIR FORCE. BE AN AIR WARRIOR!</P>
+    </div>
+    <p class="footerText">Website made just for purpose of knowledge and from eternal motivation and love for the IAF.
+    </p>
+    <p class="footerText">COPYRIGHT&copy; 2020 VA007. ALL RIGHTS RESERVED.</p>
+  </footer>
+
+</body>
+
+</html>

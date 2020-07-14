@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adding Beauty with CSS</title>
+  <link rel="shortcut icon"
+    href="https://www.pinclipart.com/picdir/big/495-4955744_css-logo-png-css-logo-black-and-white.png"
+    type="image/x-icon">
+  <link rel="stylesheet" href="styling.css">
+
+  <!-- Fonts used -->
+  <!--Header=========>> font-family: 'Oswald', sans-serif;-->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+
+  <!-- Line above Headder=======>> font-family: 'Courier Prime', monospace; -->
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+
+  <!--Links below header========>> font-family: 'Roboto', sans-serif;-->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+  <!--For all other text========>> font-family: 'Lato', sans-serif; -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0px;
+      padding: 0px;
+      background-color: rgb(252, 244, 214);
+    }
+
+    #headerBox {
+      background-color: #FFCD00;
+      padding: 10px 0px 0.5px 0px;
+      margin: 0px 0px 0px 0px;
+    }
+
+    .header {
+      color: black;
+      font-family: 'Oswald', sans-serif;
+      font-size: 380%;
+      text-align: center;
+      margin-top: 0px;
+      margin-bottom: 15px;
+      padding-top: 0px;
+    }
+
+    #aboveHeader {
+      font-size: 100%;
+      font-family: 'Courier Prime', monospace;
+      text-align: center;
+      padding: 0px 0px 0px 0px;
+      margin-bottom: 10px;
+    }
+
+    #belowHeader {
+      font-size: 140%;
+      font-family: 'Roboto', sans-serif;
+      text-align: center;
+      margin-top: 0px;
+
+    }
+
+    .headerButtonLinks {
+      text-decoration: none;
+      color: black;
+    }
+
+    a:hover {
+      color: white;
+    }
+
+    #mainImage {
+      background-image: url(https://miro.medium.com/max/3840/1*eBvYOHK9lvqu64ofbExELg.jpeg);
+      width: 100%;
+      height: 80vh;
+      background-repeat: no-repeat;
+      background-position: center center;
+
+    }
+
+    #wrapper {
+      width: 80%;
+      margin: auto;
+    }
+
+    #content {
+      width: 40%;
+      border: 2px solid black;
+      border-radius: 10px;
+      margin-left: 80px;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      float: left;
+      background-color: rgb(255, 234, 150);
+    }
+
+    #comparingCSS {
+      width: 40%;
+      border: 2px solid black;
+      border-radius: 10px;
+      margin-left: 30px;
+      margin-right: 80px;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      float: right;
+      background-color: rgb(255, 234, 150);
+    }
+
+    .subHeadCSS {
+      font-size: 200%;
+      font-family: 'Oswald', sans-serif;
+      text-align: center;
+      margin: 0px;
+      padding: 15px 10px 10px 25px;
+    }
+
+    .subParaCSS {
+      font-size: 120%;
+      font-family: 'Courier Prime', monospace;
+      text-align: justify;
+      margin: 0px;
+      padding: 25px;
+    }
+
+
+    #tableCSS {
+      border-collapse: collapse;
+      text-align: left;
+      height: 400px;
+      width: 70%;
+      clear: both;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 20px;
+    }
+
+    th {
+      padding: 14px;
+      font-size: 140%;
+      font-family: 'Courier Prime', monospace;
+      background-color: black;
+      color: #FFCD00;
+    }
+
+    tr:nth-child(even) {
+      background-color: #FFCD00
+    }
+
+    tr:nth-child(odd) {
+      background-color: rgb(252, 244, 214)
+    }
+
+    td {
+      padding: 10px;
+      padding-left: 5px;
+      padding-right: 5px;
+      font-size: 120%;
+      font-family: 'Courier Prime', monospace;
+    }
+
+    #aboveFooter {
+      background-color: black;
+      background-image: url(https://i.pinimg.com/originals/c2/31/f8/c231f880547d3c6c0a23cc14cb674825.png);
+      height: 190px;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-position-x: center;
+      margin-bottom: 0px;
+    }
+
+    #copyRightFooter {
+      width: 100%;
+      margin: 0px;
+      background-color: #FFCD00;
+      color: black;
+    }
+
+    #copyRight {
+      text-align: center;
+      font-size: 100%;
+      font-family: 'Courier Prime', monospace;
+      padding-top: 28px;
+      padding-bottom: 28px;
+      margin: 0px;
+    }
+
+
+
+    /* ------------------Top Button Styling-------------------*/
+    #myBtn {
+      position: fixed;
+      bottom: 20px;
+      right: 30px;
+      z-index: 99;
+      font-size: 18px;
+      border: 1px solid rgb(0, 0, 0);
+      outline: none;
+      background-color: #FFCD00;
+      color: rgb(0, 0, 0);
+      cursor: pointer;
+      padding: 15px;
+      border-radius: 4px;
+    }
+
+    #myBtn:hover {
+      background-color: rgb(0, 0, 0);
+      color: #FFCD00
+    }
+  </style>
+
+  <!-- JavaScript Code Starting -->
+  <script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+
+</head>
+
+<body>
+
+  <div id="headerBox">
+    <p id="aboveHeader">There are two ways to write a error free program; Only the third one works!</p>
+    <h1 class="header">Learn the Basics to Beautify your Website</h1>
+    <p id="belowHeader"><a class="headerButtonLinks" href="https://www.w3schools.com/html/default.asp">HTML</a>
+      &emsp;&emsp; | &emsp;&emsp; <strong><a class="headerButtonLinks" href="#">CSS</a></strong> &emsp;&emsp; |
+      &emsp;&emsp; <a class="headerButtonLinks" href="https://www.w3schools.com/js/default.asp">JavaScript</a></p>
+  </div>
+
+  <div id="mainImage">
+  </div>
+
+
+  <div id="wrapper">
+    <div id="content">
+      <h3 class="subHeadCSS">Basic styling Properties</h3>
+      <p class="subParaCSS">CSS stands for Cascading Style Sheets. CSS describes how HTML elements are to be displayed
+        on screen, paper, or in other media. CSS saves a lot of work. It can control the layout of multiple web pages
+        all at once. External stylesheets are stored in CSS files. There are many CSS styling properties some of which
+        are given on the table on left.</p>
+    </div>
+    <div id="comparingCSS">
+      <h3 class="subHeadCSS">Inline,Internal and External CSS</h3>
+      <p class="subParaCSS">An external stylesheet is a standalone .css file that is linked from a web page. The
+        advantage of external stylesheets is that it can be created once and the rules applied to multiple web pages.
+        Should you need to make widespread changes to your site design, you can make a single change in the stylesheet
+        and it will be applied to all linked pages, saving time and effort.
+      </p>
+    </div>
+
+  </div>
+
+  <div id="table">
+    <table id="tableCSS">
+      <tr>
+        <th>Property</th>
+        <th>Use</th>
+      </tr>
+      <tr>
+        <td>CSS Selectors</td>
+        <td>CSS selectors are used to "find" (or select) the HTML elements you want to style.</td>
+      </tr>
+      <tr>
+        <td>CSS Colors</td>
+        <td>Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values.</td>
+      </tr>
+      <tr>
+        <td>CSS Backgrounds</td>
+        <td>The CSS background properties are used to define the background effects for elements.</td>
+      </tr>
+      <tr>
+        <td>CSS Borders</td>
+        <td>The CSS border properties allow you to specify the style, width, and color of an element's border.</td>
+      </tr>
+      <tr>
+        <td>CSS Margins</td>
+        <td>The CSS margin properties are used to create space around elements, outside of any defined borders.</td>
+      </tr>
+
+    </table>
+  </div>
+
+  <div id="aboveFooter">
+    <!-- <img id="logoImage" src="https://i.pinimg.com/originals/c2/31/f8/c231f880547d3c6c0a23cc14cb674825.png" alt="logos"> -->
+  </div>
+
+  <footer id="copyRightFooter">
+    <p id="copyRight">
+      <strong>Copyright&copy; VA007 2000-2020. All Rights Reserved.</strong>
+    </p>
+  </footer>
+
+
+  <!-- Back to Top Button -->
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Go to Top</button>
+</body>
+
+</html>
