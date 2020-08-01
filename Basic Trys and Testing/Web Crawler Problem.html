@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Crawler Exercise</title>
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li>home</li>
+      <li>about</li>
+      <li>contact</li>
+      <li>services</li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <a href="//facebook.com">1</a>
+    <a href="//facecool.com">2</a>
+    <a href="//bookface.com">3</a>
+    <a href="//google.com">4</a>
+    <a href="//lolfacebook.com">5</a>
+    <a href="//instagram.com">6</a>
+  </div>
+
+  <div class="container">
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem aliquid, est deserunt dolore dolorum obcaecati
+      eaque similique debitis perferendis earum sapiente aspernatur necessitatibus laudantium voluptatum doloremque
+      iusto odit magnam libero!</p>
+
+    <p id="images"></p>
+    <p id="links"></p>
+  </div>
+
+  <script>
+
+    // for (let i = 0; i < document.links.length; i++) {
+    //   a = document.links[i].href;
+    //   console.log(a);
+    //   document.getElementById('links').innerHTML += i + ":" + a + "</br>";
+    // }
+
+    // Method 1- My Original method 
+    // let key = "face";
+    // for (let i = 0; i < document.links.length; i++) {
+    //   a = document.links[i].href;
+    //   if(a.indexOf(key) != -1) {
+    //     document.getElementById('links').innerHTML += "Link at location " + i + ' containing the key "' + key + '" is ' + ": " + a + "</br>";
+    //     console.log(a);
+    //   }
+    // }
+
+
+    // Method 2
+    // a = document.links;
+    // Array.from(a).forEach(element => {
+    //   if (element.href.includes("face")) {
+    //     console.log(element);
+    //   }
+    // });
+
+  </script>
+</body>
+
+</html>
