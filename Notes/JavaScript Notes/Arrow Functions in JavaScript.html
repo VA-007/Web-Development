@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Arrow Functions</title>
+</head>
+
+<body>
+  <div class="container">
+    This is arrow functions tutorial.
+  </div>
+  <script>
+    // Arrow function
+    // let greet =  ()=> {
+    //     console.log('Good morning');
+    // }
+
+    // let greet = () => console.log('Good morning');
+
+
+    // let sum2 = (a, b)=>{
+    //     return a+b;
+    // };
+
+    // let sum2 = (a, b) => a + b;
+    // let half = a => a / 2;
+
+    // function greet() {
+    //     console.log('Good morning');
+    // }
+
+    // greet();
+    // setTimeout(() => {
+    //   console.log("We are inside settimeout");
+    // }, 3000);
+
+    // let obj1 = {
+    //   greeting: "Good Morning",
+    //   names: ["Harry", "Rohan", "SkillF", "DjKhiladi"],
+    //   speak() {
+    //     this.names.forEach((student) => {
+    //       console.log(this.greeting + " Kukdoo Koo " + student);
+    //     });
+    //   }
+    // }
+
+    // obj1.speak();
+
+
+    let hello = () => console.log("Hello Vishank Sharma");
+    hello();
+
+    let greatestOfThree = (a,b,c) => {
+      if (a>=b && a>=c) {
+        return("Greatest is " + a);
+      } else if(b>=a && b>=c) {
+        return("The Greatest no is " + b);
+      } else {
+        return("Greatest no is " + c);
+      }
+    }
+
+    let obj2 = {
+      names: ["Vishank", "Vivek", "Himanshu"],
+      midStatement: " likes a lot of juices and chocolates and a lot of ",
+      other: "Icecream",
+      finisher() {
+        this.names.forEach((friends) => {
+          console.log(friends + this.midStatement + this.other);
+        }); 
+      }
+    }
+
+    obj2.finisher();
+
+  </script>
+</body>
+
+</html>
